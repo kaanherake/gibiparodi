@@ -6,14 +6,14 @@
   <meta name="theme-color" content="#101012">
   <meta name="color-scheme" content="dark">
   <title>GibiParodi | Tüm hesaplarımız 🎬</title>
-  <meta name="description" content="Küp kafalar, tanıdık replikler. GibiParodi’nin YouTube, TikTok ve Instagram hesapları tek bir yerde.">
+  <meta name="description" content="Küp kafalar. GibiParodi’nin YouTube, TikTok ve Instagram hesapları tek bir yerde.">
   <link rel="canonical" href="https://kaanherake.github.io/gibiparodi/">
   <link rel="icon" href="avatar.jpg" type="image/jpeg">
   <link rel="apple-touch-icon" href="avatar.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:title" content="GibiParodi | Tüm hesaplarımız 🎬">
-  <meta property="og:description" content="Küp kafalar, tanıdık replikler. YouTube, TikTok ve Instagram’da buluşalım.">
+  <meta property="og:description" content="Küp kafalar. YouTube, TikTok ve Instagram’da buluşalım.">
   <meta property="og:url" content="https://kaanherake.github.io/gibiparodi/">
   <meta property="og:image" content="https://kaanherake.github.io/gibiparodi/avatar.jpg">
   <meta property="og:image:alt" content="GibiParodi’nin iki Minecraft tarzı karakterli logosu">
@@ -22,9 +22,18 @@
     :root{--bg:#101012;--card:#1c1c20;--gold:#ffd83d;--text:#fbfaf5;--muted:#b7b6ae;--line:#343437}
     *{box-sizing:border-box}
     html{min-height:100%;background:var(--bg)}
-    body{margin:0;min-height:100vh;min-height:100svh;color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 50% 0%,#54401044 0,transparent 54%),var(--bg);-webkit-font-smoothing:antialiased}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff03 1px,transparent 1px),linear-gradient(90deg,#ffffff03 1px,transparent 1px);background-size:48px 48px;z-index:0}
-    main{position:relative;max-width:480px;margin:auto;padding:38px 22px 30px;padding-top:max(38px,env(safe-area-inset-top));padding-bottom:max(30px,env(safe-area-inset-bottom))}
+    body{margin:0;min-height:100vh;min-height:100svh;color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);-webkit-font-smoothing:antialiased}
+    [hidden]{display:none!important}
+    .world{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;background:radial-gradient(ellipse at 14% 29%,#c7881b29,transparent 41%),radial-gradient(ellipse at 90% 67%,#8054c920,transparent 37%),linear-gradient(130deg,#18140e,#101012 40%,#141019)}
+    .world:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#eedc9c05 1px,transparent 1px),linear-gradient(90deg,#eedc9c05 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse at center,transparent 15%,#000 85%)}
+    .world:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(16,16,18,.54) 35%,rgba(16,16,18,.54) 65%,transparent);z-index:2}
+    .voxel{position:absolute;width:var(--size,110px);height:var(--size,110px);background:linear-gradient(135deg,#8b6b2638,#28221b);border:1px solid #c0a0542b;transform:rotate(-15deg) skew(5deg,5deg);box-shadow:20px 20px 0 #09090b99,0 0 55px #d39d1e0c;opacity:var(--alpha,.75)}
+    .voxel:before{content:"";position:absolute;top:calc(var(--size,110px) * -.2);left:calc(var(--size,110px) * .1);width:100%;height:20%;background:#9d79302b;transform:skewX(-45deg);border-top:1px solid #d5b45c44}
+    .voxel:after{content:"";position:absolute;right:calc(var(--size,110px) * -.2);top:calc(var(--size,110px) * -.1);height:100%;width:20%;background:#3b30452e;transform:skewY(-45deg);border-right:1px solid #bb973524}
+    .v1{left:calc(50% - 480px);top:15%;--size:142px}.v2{left:calc(50% - 350px);top:51%;--size:73px;--alpha:.6}.v3{left:calc(50% - 555px);top:76%;--size:104px}.v4{right:calc(50% - 467px);top:14%;--size:83px}.v5{right:calc(50% - 533px);top:58%;--size:145px}.v6{right:calc(50% - 323px);top:82%;--size:52px;--alpha:.6}
+    .portal{position:absolute;right:calc(50% - 470px);top:35%;width:152px;height:227px;border:14px solid #211b2c;border-radius:3px;transform:rotate(12deg);box-shadow:inset 0 0 25px #ad73ff3b,0 0 65px #8251b820,3px 3px 0 #b283da2e;background:repeating-linear-gradient(0deg,transparent 0 22px,#b971ff09 22px 24px),linear-gradient(135deg,#51335b17,#a37bc32a,#291f4622);opacity:.85}
+    .spark{position:absolute;width:5px;height:5px;background:#ffdc50;box-shadow:0 0 18px #ffc93388;opacity:.65}.s1{left:12%;top:12%}.s2{left:23%;top:42%;width:3px;height:3px}.s3{right:16%;top:27%}.s4{right:9%;top:81%;width:4px;height:4px}.s5{left:17%;bottom:13%;opacity:.3}
+    main{position:relative;z-index:1;max-width:480px;margin:auto;padding:38px 22px 30px;padding-top:max(38px,env(safe-area-inset-top));padding-bottom:max(30px,env(safe-area-inset-bottom))}
     header{text-align:center}
     .portrait{position:relative;width:144px;height:144px;margin:0 auto 20px;padding:5px;border:1px solid #ffd83d80;border-radius:50%;background:#242015;box-shadow:0 0 52px #ffc52b18}
     .portrait:before,.portrait:after{content:"";position:absolute;width:11px;height:11px;background:var(--gold);box-shadow:0 0 14px #ffd83d50}
@@ -51,20 +60,26 @@
     .words small{display:block;font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.4}
     .primary .words small{color:#4c4019}
     .arrow{width:18px;height:18px;flex-shrink:0;opacity:.85}
-    footer{text-align:center;margin:28px 0 0;color:#a09e92;font-size:11px;line-height:1.7}
+    footer{text-align:center;margin:28px 0 0;color:#b7b3a8;font-size:12px;line-height:1.7;letter-spacing:.4px}
+    footer sup{font-size:8px;color:#d2b85b;margin-left:2px}
     .pixels{display:flex;gap:4px;justify-content:center;margin-bottom:10px}
     .pixels i{display:block;width:5px;height:5px;background:var(--gold);opacity:.75}
     .pixels i:nth-child(2){opacity:.45}.pixels i:nth-child(3){opacity:.2}
-    @media(max-width:360px){main{padding-inline:16px}.link{gap:11px;padding-inline:14px}.words strong{font-size:16px}.words small{font-size:10.5px}h1{font-size:37px}}
+    .contact-area{margin-top:22px}.contact-open{width:100%;display:flex;align-items:center;gap:12px;border:1px solid #80703866;border-radius:15px;padding:15px 17px;text-align:left;background:#201c15e8;color:var(--text);font:inherit;cursor:pointer}.contact-open>svg{width:24px;height:24px;flex-shrink:0;color:var(--gold)}.contact-open strong{font-size:15px;display:block}.contact-open small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.contact-open:focus-visible,.close-dialog:focus-visible,.send:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    dialog{color:var(--text);background:#1c1b20;border:1px solid #746444;border-radius:22px;padding:0;width:min(440px,calc(100% - 28px));max-height:calc(100dvh - 32px);box-shadow:0 24px 90px #0009;overflow-y:auto;overscroll-behavior:contain}
+    dialog::backdrop{background:#050509cc;backdrop-filter:blur(5px)}.dialog-content{padding:25px}.dialog-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.dialog-top h2{margin:0;font-size:25px;letter-spacing:-.6px}.close-dialog{display:grid;place-items:center;background:#ffffff0c;color:var(--text);border:1px solid #ffffff18;border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:25px}.form-intro{font-size:13px;color:var(--muted);line-height:1.65;margin:12px 0 19px}.field{display:grid;gap:6px;margin-bottom:15px}.field label{font-weight:600;font-size:12px}.field label span{font-weight:400;color:var(--muted)}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #48454a;border-radius:10px;background:#121215;color:var(--text);font:inherit;font-size:16px}.field textarea{min-height:128px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:2px}.trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.privacy-note{font-size:11px;line-height:1.6;color:#b7b4ac;margin:0 0 14px}.privacy-note a{color:var(--gold)}.send{border:0;border-radius:12px;background:var(--gold);color:#211c0c;font:inherit;font-size:15px;font-weight:750;padding:14px 20px;width:100%;cursor:pointer}.send:disabled{opacity:.5;cursor:not-allowed}.form-status{font-size:13px;line-height:1.6;margin-top:12px}.form-status:empty{display:none}.preview-note{padding:10px 12px;margin:0 0 16px;background:#ffd83d12;border:1px solid #ffd83d55;border-radius:9px;color:#ffe376;font-size:12px;line-height:1.5}
+    @media(max-width:700px){.v1{left:-46px;top:8%;--size:96px;--alpha:.6}.v2{left:-29px;top:57%;--size:65px;--alpha:.42}.v3{left:18px;top:88%;--size:54px;--alpha:.35}.v4{right:-19px;top:18%;--size:66px;--alpha:.45}.v5{right:-59px;top:74%;--size:115px;--alpha:.6}.v6{display:none}.portal{right:-51px;top:40%;width:123px;height:187px;opacity:.45}.world:after{background:linear-gradient(90deg,transparent,rgba(16,16,18,.58) 24%,rgba(16,16,18,.58) 76%,transparent)}.spark{opacity:.4}}
+    @media(max-width:360px){main{padding-inline:16px}.link{gap:11px;padding-inline:14px}.words strong{font-size:16px}.words small{font-size:10.5px}h1{font-size:37px}.dialog-content{padding:19px}}
     @media(prefers-reduced-motion:reduce){.link{transition:none}.link:hover,.link:active{transform:none}}
   </style>
 </head>
 <body>
+  <div class="world" aria-hidden="true"><div class="voxel v1"></div><div class="voxel v2"></div><div class="voxel v3"></div><div class="voxel v4"></div><div class="voxel v5"></div><div class="voxel v6"></div><div class="portal"></div><i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i><i class="spark s5"></i></div>
   <main>
     <header>
       <div class="portrait"><img src="avatar.jpg" width="800" height="800" alt="GibiParodi logosu" fetchpriority="high"></div>
       <h1>Gibi<span>Parodi</span></h1>
-      <p class="tagline">Küp kafalar, tanıdık replikler.</p>
+      <p class="tagline">Küp kafalar</p>
       <p class="description">Sevdiğin Türk dizi ve filmleri,<br>Minecraft evreninde.</p>
     </header>
     <div class="section-label">TÜM HESAPLARIMIZ</div>
@@ -85,7 +100,29 @@
         <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
       </a>
     </nav>
-    <footer><div class="pixels" aria-hidden="true"><i></i><i></i><i></i></div>GibiParodi · Aynı replikler, bambaşka bir dünya.</footer>
+    <section class="contact-area" id="contact-area" hidden aria-label="GibiParodi iletişim">
+      <button type="button" class="contact-open" id="contact-open" aria-haspopup="dialog" aria-controls="contact-dialog"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9H13a8.5 8.5 0 0 1 8 8v.5Z"/><path d="M8 11h8M8 14h5"/></svg><span><strong>Bize bir not bırak</strong><small>Görüş · Video önerisi · İş birliği</small></span></button>
+    </section>
+    <footer><div class="pixels" aria-hidden="true"><i></i><i></i><i></i></div>GibiParodi<sup>™</sup></footer>
   </main>
+  <dialog id="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-intro">
+    <div class="dialog-content">
+      <div class="dialog-top"><h2 id="contact-title">Söz sende.</h2><button class="close-dialog" type="button" id="contact-close" aria-label="Mesaj kutusunu kapat">×</button></div>
+      <p id="contact-intro" class="form-intro">Bir sahne mi geldi aklına, söyleyecek bir şeyin mi var? Buraya bırak.</p>
+      <p class="preview-note" id="contact-preview-note" hidden>Önizleme: Mesaj alma bağlantısı henüz etkin değil. Buradan mesaj gönderilmez.</p>
+      <form id="contact-form">
+        <div class="field"><label for="contact-topic">Ne hakkında?</label><select id="contact-topic" name="topic"><option value="Video önerisi">Video önerisi</option><option value="Görüş ve öneri">Görüş ve öneri</option><option value="İş birliği">İş birliği</option></select></div>
+        <div class="field"><label for="contact-name">Adın <span>· isteğe bağlı</span></label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Sana nasıl seslenelim?"></div>
+        <div class="field"><label for="contact-email">E-posta <span id="contact-email-note">· yanıt istiyorsan</span></label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="ornek@eposta.com"></div>
+        <div class="field"><label for="contact-message">Mesajın</label><textarea id="contact-message" name="message" required minlength="5" maxlength="3000" placeholder="Sıradaki videoda şu sahne olsun…"></textarea></div>
+        <div class="trap" aria-hidden="true"><label for="contact-website">Bu alanı boş bırak<input id="contact-website" name="_gotcha" tabindex="-1" autocomplete="off" type="text"></label></div>
+        <p class="privacy-note">Mesajın herkese açık paylaşılmaz; GibiParodi ekibine iletilir. İletişim bilgini yalnızca mesajını yanıtlamak için kullanırız. Şifre, ödeme bilgisi veya hassas kişisel bilgi yazma. İletim hizmeti: <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree</a>.</p>
+        <button class="send" id="contact-send" type="submit" disabled>Gönder</button>
+        <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </dialog>
+  <script src="contact-config.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
